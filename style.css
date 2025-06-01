@@ -59,11 +59,9 @@ details[open] summary {
 }
 
 .images {
-  width: 400px;
+  width: 405px;
   height: 300px;
+  margin-right: 20px;
+  margin-right: 20px;
 }
 
-div {
-  display: flex; 
-  justify-content: center;
-}
