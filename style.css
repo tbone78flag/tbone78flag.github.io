@@ -48,3 +48,12 @@ details[open] summary {
 .tag {
   margin-bottom: 2px;
 }
+
+.job {
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+#position {
+  margin: 5px;
+}
