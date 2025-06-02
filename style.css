@@ -87,3 +87,9 @@ details[open] summary {
   width: 425px;
   height: 425px;
 }
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
