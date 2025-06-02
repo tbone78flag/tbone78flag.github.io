@@ -102,5 +102,8 @@ details[open] summary {
     height: auto;
     display: block;
     margin: 1em auto 0 auto;
+    max-width: 425px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
 }
