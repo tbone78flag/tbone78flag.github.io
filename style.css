@@ -66,12 +66,24 @@ details[open] summary {
 }
 
 .contact {
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   margin-left: 20px;
 }
 
 .contactgithub {
   margin-top: 1px;
   margin-left: 20px;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 1em;
+}
+
+#professional {
+  width: 425px;
+  height: 425px;
 }
