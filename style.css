@@ -76,7 +76,7 @@ details[open] summary {
   margin-left: 20px;
 }
 
-#about {
+#about-grid {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: start;
@@ -84,6 +84,6 @@ details[open] summary {
 }
 
 #professional {
-  width: 325px;
-  height: 325px;
+  width: 425px;
+  height: 425px;
 }
