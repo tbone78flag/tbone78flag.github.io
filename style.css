@@ -96,4 +96,11 @@ details[open] summary {
   #about-grid {
     grid-template-columns: 1fr;
   }
+
+  #professional {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto 0 auto;
+  }
 }
