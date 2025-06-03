@@ -59,10 +59,8 @@ details[open] summary {
 }
 
 .images {
-  width: 405px;
+  width: 370px;
   height: 300px;
-  margin-right: 20px;
-  margin-right: 20px;
 }
 
 .contact {
@@ -106,4 +104,8 @@ details[open] summary {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
+}
+
+p, h2, h3, h4, a, img {
+  margin: 2%;
 }
