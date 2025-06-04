@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: Consolas, 'Courier New', monospace;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -161,8 +161,20 @@ p, h2, h3, h4, a {
   font-weight: bold;
 }
 
+.pound-symbol {
+  color: #4FC1FF;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.javascript-symbol {
+  color: #f1e05a;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
 .angled {
-  font-family: 'Fira Code', monospace;
+  font-family: Consolas, 'Courier New', monospace;
   font-variant-ligatures: none;
   letter-spacing: -0.0ch; /* shrinks the space */
   margin-right: 6px;
