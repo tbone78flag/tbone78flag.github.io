@@ -124,16 +124,23 @@ p, h2, h3, h4, a {
 /*Look like VS Code tabs*/
 .tabs {
   display: flex;
-  flex-wrap: wrap;               /* Allow wrapping on narrow screens */
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;                /* 🔸 CENTER the tabs */
   background-color: #1e1e1e;
   padding: 0.5rem;
   border-bottom: 1px solid #333;
-  gap: 0.25rem;                  /* Space between tabs */
-  overflow-x: auto;              /* Enables horizontal scroll if needed */
+  gap: 0.25rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;                  /* Hide scrollbar in Firefox */
+}
+
+.tabs::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .tab-link {
+  flex: 0 0 auto;
   color: #cccccc;
   background-color: #2d2d2d;
   padding: 0.4rem 1rem;
@@ -143,9 +150,8 @@ p, h2, h3, h4, a {
   border: 1px solid transparent;
   border-bottom: none;
   transition: background 0.2s ease;
-  white-space: nowrap;          /* Prevents line breaking */
-  font-size: 0.95rem;           /* Scales better on mobile */
-  min-width: 80px;
+  white-space: nowrap;
+  font-size: 0.95rem;
 }
 
 .tab-link:hover {
