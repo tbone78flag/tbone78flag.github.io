@@ -205,3 +205,7 @@ p, h2, h3, h4, a {
 .alligators {
   color: #808080;
 }
+
+.comment {
+  color: #6a9955;
+}
