@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
 }
 
 .title {
@@ -14,6 +16,10 @@ header {
   color: #fff;
   padding: 1em;
   text-align: center;
+}
+
+summary {
+  color: #333;
 }
 
 nav a {
@@ -28,7 +34,7 @@ section {
 }
 
 h1, h2, h3 {
-  color: #333;
+  color: #d4d4d4;
 }
 
 a {
@@ -189,4 +195,13 @@ p, h2, h3, h4, a {
   font-variant-ligatures: none;
   letter-spacing: -0.0ch; /* shrinks the space */
   margin-right: 6px;
+}
+
+/*<h#> Symbol color changes*/
+.header-symbols {
+  color: #569cd6;
+}
+
+.alligators {
+  color: #808080;
 }
