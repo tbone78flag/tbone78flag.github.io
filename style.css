@@ -124,23 +124,28 @@ p, h2, h3, h4, a {
 /*Look like VS Code tabs*/
 .tabs {
   display: flex;
+  flex-wrap: wrap;               /* Allow wrapping on narrow screens */
   justify-content: center;
   background-color: #1e1e1e;
   padding: 0.5rem;
   border-bottom: 1px solid #333;
+  gap: 0.25rem;                  /* Space between tabs */
+  overflow-x: auto;              /* Enables horizontal scroll if needed */
 }
 
 .tab-link {
   color: #cccccc;
   background-color: #2d2d2d;
   padding: 0.4rem 1rem;
-  margin-right: 0.25rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   text-decoration: none;
   border: 1px solid transparent;
   border-bottom: none;
   transition: background 0.2s ease;
+  white-space: nowrap;          /* Prevents line breaking */
+  font-size: 0.95rem;           /* Scales better on mobile */
+  min-width: 80px;
 }
 
 .tab-link:hover {
