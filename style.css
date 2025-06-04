@@ -59,8 +59,18 @@ details[open] summary {
 }
 
 .images {
-  width: 370px;
+  width: 390px;
   height: 300px;
+  margin: 0; /* Remove margin */
+  border-radius: 6px;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem; /* Nice small consistent space between images */
+  padding: 0 2rem; /* Keeps edge padding intact */
 }
 
 .contact {
@@ -106,6 +116,6 @@ details[open] summary {
   }
 }
 
-p, h2, h3, h4, a, img {
-  margin: 2%;
+p, h2, h3, h4, a {
+  margin: 1%;
 }
