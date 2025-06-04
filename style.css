@@ -6,11 +6,11 @@ body {
 }
 
 .title {
-  color: #fff;
+  color: #d4d4d4;
 }
 
 header {
-  background: #333;
+  background: #1e1e1e; /* match the .tabs background */
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -20,6 +20,7 @@ nav a {
   margin: 0 10px;
   color: #fff;
   text-decoration: none;
+  font-family: 'Fira Code', monospace;
 }
 
 section {
@@ -118,4 +119,51 @@ details[open] summary {
 
 p, h2, h3, h4, a {
   margin: 1%;
+}
+
+/*Look like VS Code tabs*/
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 0.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.tab-link {
+  color: #cccccc;
+  background-color: #2d2d2d;
+  padding: 0.4rem 1rem;
+  margin-right: 0.25rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-bottom: none;
+  transition: background 0.2s ease;
+}
+
+.tab-link:hover {
+  background-color: #3a3a3a;
+}
+
+.tab-link.active {
+  background-color: #262626;
+  color: white;
+  border: 1px solid #3c3c3c;
+  border-bottom: 1px solid #1e1e1e;
+  z-index: 2;
+}
+/*Add orange to the <> tab*/
+.tab-symbol {
+  color: #e66407;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.angled {
+  font-family: 'Fira Code', monospace;
+  font-variant-ligatures: none;
+  letter-spacing: -0.0ch; /* shrinks the space */
+  margin-right: 6px;
 }
