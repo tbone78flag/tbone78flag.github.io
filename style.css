@@ -209,3 +209,11 @@ p, h2, h3, h4, a {
 .comment {
   color: #6a9955;
 }
+
+.hreference {
+  color: #9cdcfe;
+}
+
+.links {
+  color: #ce9178;
+}
