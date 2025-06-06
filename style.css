@@ -127,6 +127,10 @@ p, h2, h3, h4, a {
   margin: 1%;
 }
 
+ul.no-bullets {
+  list-style-type: none;
+}
+
 /*Look like VS Code tabs*/
 .tabs {
   display: flex;
@@ -227,8 +231,22 @@ p, h2, h3, h4, a {
   margin-right: 3px;
 }
 
-/**Resume Styling**/
+/*Resume Styling*/
 
 .header-yellow {
   color: #f8c555;
+}
+
+.stylesheet-links {
+  color: #ce9178;
+  margin-left: 3px;
+  margin-right: 1px;
+}
+
+.media-style {
+  color: #c586c0;
+}
+
+.pixel-style {
+  color: #b5cea8;
 }
