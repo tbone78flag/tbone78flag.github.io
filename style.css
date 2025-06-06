@@ -226,3 +226,9 @@ p, h2, h3, h4, a {
   margin-left: 3px;
   margin-right: 3px;
 }
+
+/**Resume Styling**/
+
+.header-yellow {
+  color: #f8c555;
+}
