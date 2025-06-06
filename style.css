@@ -214,6 +214,15 @@ p, h2, h3, h4, a {
   color: #9cdcfe;
 }
 
-.links {
+.quotes {
   color: #ce9178;
+}
+
+.mailto {
+  color: #6a9955;
+}
+.links {
+  color: #fff;
+  margin-left: 3px;
+  margin-right: 3px;
 }
