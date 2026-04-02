@@ -34,15 +34,20 @@
       </p>
       <p><a href="https://github.com/tbone78flag/arbys-performance-app">View on GitHub</a></p>
     </article>
-    <div class="image-row">
-      <img src="images/arbys-app-login.JPG" alt="Arby's Performance Web App Login" class="images">
-      <img src="images/arbys-app-dashboard.JPG" alt="Arby's Performance Web App Dashboard" class="images">
-      <img src="images/arbys-app-money.JPG" alt="Arby's Performance Web App Cash Control" class="images">
-      <img src="images/arbys-app-whatif.JPG" alt="Arby's Performance Web App Upsell What-If Calculator" class="images">
-      <img src="images/arbys-app-goals.JPG" alt="Arby's Performaance Web App GM and AM specific Goals and Settings" class="images">
-      <img src="images/arbys-app-speed.JPG" alt="Arby's Performance Web App Speed Charts" class="images">
-      <img src="images/arbys-app-beef.JPG" alt="Arby's Performance Web App Beef Variances" class="images">
-      <img src="images/arbys-app-bingo.JPG" alt="Arby's Performance Web App Bingo" class="images">
+    <div class="carousel">
+      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+      <div class="carousel-track">
+        <img src="images/arbys-app-login.JPG" alt="Arby's Performance Web App Login" class="images">
+        <img src="images/arbys-app-dashboard.JPG" alt="Arby's Performance Web App Dashboard" class="images">
+        <img src="images/arbys-app-money.JPG" alt="Arby's Performance Web App Cash Control" class="images">
+        <img src="images/arbys-app-whatif.JPG" alt="Arby's Performance Web App Upsell What-If Calculator" class="images">
+        <img src="images/arbys-app-goals.JPG" alt="Arby's Performaance Web App GM and AM specific Goals and Settings" class="images">
+        <img src="images/arbys-app-speed.JPG" alt="Arby's Performance Web App Speed Charts" class="images">
+        <img src="images/arbys-app-beef.JPG" alt="Arby's Performance Web App Beef Variances" class="images">
+        <img src="images/arbys-app-bingo.JPG" alt="Arby's Performance Web App Bingo" class="images">
+      </div>
+      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+      <div class="carousel-dots"></div>
     </div>
     <article>
       <h3>Bookish — Personal Reading Tracker</h3>
@@ -60,15 +65,20 @@
       </p>
       <p><a href="https://github.com/tbone78flag/bookish">View on GitHub</a></p>
     </article>
-    <div class="image-row">
-      <img src="images/bookish-start.png" alt="Bookish Landing Page" class="images">
-      <img src="images/bookish-sign-in.png" alt="Bookish Sign In" class="images">
-      <img src="images/bookish-dashboard.png" alt="Bookish Dashboard" class="images">
-      <img src="images/bookish-library.png" alt="Bookish Library View" class="images">
-      <img src="images/bookish-book-search.png" alt="Bookish Book Search" class="images">
-      <img src="images/bookish-book-page.png" alt="Bookish Book Page" class="images">
-      <img src="images/bookish-update-progress.png" alt="Bookish Update Reading Progress" class="images">
-      <img src="images/bookish-themes.png" alt="Bookish Genre-Inspired Themes" class="images">
+    <div class="carousel">
+      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+      <div class="carousel-track">
+        <img src="images/bookish-start.png" alt="Bookish Landing Page" class="images">
+        <img src="images/bookish-sign-in.png" alt="Bookish Sign In" class="images">
+        <img src="images/bookish-dashboard.png" alt="Bookish Dashboard" class="images">
+        <img src="images/bookish-library.png" alt="Bookish Library View" class="images">
+        <img src="images/bookish-book-search.png" alt="Bookish Book Search" class="images">
+        <img src="images/bookish-book-page.png" alt="Bookish Book Page" class="images">
+        <img src="images/bookish-update-progress.png" alt="Bookish Update Reading Progress" class="images">
+        <img src="images/bookish-themes.png" alt="Bookish Genre-Inspired Themes" class="images">
+      </div>
+      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+      <div class="carousel-dots"></div>
     </div>
     <article>
       <h3>Financial Manager</h3>
@@ -114,11 +124,56 @@
       <p><a href="https://user-behavior-analytics-dashboard-middtgh8appavoyjxpr3toe.streamlit.app/">Deployed Live on Streamlit Cloud</a></p>
       <p><a href="https://github.com/tbone78flag/user-behavior-analytics-dashboard">View on GitHub</a></p>
     </article>
-    <div class="image-row">
-      <img src="images/UBAD.JPG" alt="Retention Rate for User Behavior Analytics Dashboard" class="images">
-      <img src="images/RetentionRate.JPG" alt="Retention Rate for User Behavior Analytics Dashboard" class="images">
-      <img src="images/RawData.JPG" alt="Raw Data Input for User Behavior Analytics Dashboard" class="images">
+    <div class="carousel">
+      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+      <div class="carousel-track">
+        <img src="images/UBAD.JPG" alt="Retention Rate for User Behavior Analytics Dashboard" class="images">
+        <img src="images/RetentionRate.JPG" alt="Retention Rate for User Behavior Analytics Dashboard" class="images">
+        <img src="images/RawData.JPG" alt="Raw Data Input for User Behavior Analytics Dashboard" class="images">
+      </div>
+      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+      <div class="carousel-dots"></div>
     </div>
   </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.carousel').forEach(carousel => {
+        const track = carousel.querySelector('.carousel-track');
+        const images = track.querySelectorAll('.images');
+        const dotsContainer = carousel.querySelector('.carousel-dots');
+
+        images.forEach((_, i) => {
+          const dot = document.createElement('span');
+          dot.classList.add('dot');
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(carousel, i));
+          dotsContainer.appendChild(dot);
+        });
+
+        images[0].classList.add('active');
+      });
+    });
+
+    function goToSlide(carousel, index) {
+      const images = carousel.querySelectorAll('.carousel-track .images');
+      const dots = carousel.querySelectorAll('.dot');
+      images.forEach(img => img.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      images[index].classList.add('active');
+      dots[index].classList.add('active');
+      carousel.dataset.index = index;
+    }
+
+    function moveSlide(btn, direction) {
+      const carousel = btn.closest('.carousel');
+      const images = carousel.querySelectorAll('.carousel-track .images');
+      const current = parseInt(carousel.dataset.index || 0);
+      let next = current + direction;
+      if (next < 0) next = images.length - 1;
+      if (next >= images.length) next = 0;
+      goToSlide(carousel, next);
+    }
+  </script>
 </body>
 </html>
