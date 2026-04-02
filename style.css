@@ -65,91 +65,19 @@ details[open] summary {
   margin-bottom: 5px;
 }
 
-/* Carousel */
-.carousel {
-  position: relative;
-  max-width: 700px;
-  margin: 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.carousel-track {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #181818;
-}
-
-.carousel-track .images {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.carousel-track .images.active {
-  opacity: 1;
-}
-
-.carousel-btn {
-  background: rgba(255, 255, 255, 0.1);
-  color: #d4d4d4;
-  border: 1px solid #444;
-  font-size: 1.4rem;
-  padding: 0.6rem 0.8rem;
-  cursor: pointer;
+.images {
+  width: 390px;
+  height: 300px;
+  margin: 0; /* Remove margin */
   border-radius: 6px;
-  transition: background 0.2s;
-  flex-shrink: 0;
 }
 
-.carousel-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.carousel-dots {
-  width: 100%;
+.image-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #555;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.dot.active {
-  background: #007acc;
-}
-
-@media (max-width: 768px) {
-  .carousel {
-    max-width: 100%;
-    padding: 0 0.5rem;
-  }
-
-  .carousel-btn {
-    font-size: 1.1rem;
-    padding: 0.4rem 0.6rem;
-  }
+  gap: 1.25rem; /* Nice small consistent space between images */
+  padding: 0 2rem; /* Keeps edge padding intact */
 }
 
 .contact {
@@ -321,84 +249,4 @@ ul.no-bullets {
 
 .pixel-style {
   color: #b5cea8;
-}
-
-/*JavaScript Syntax Theme (Projects Page)*/
-.js-keyword {
-  color: #569cd6;
-}
-
-.js-control {
-  color: #c586c0;
-}
-
-.js-func {
-  color: #dcdcaa;
-}
-
-.js-variable {
-  color: #4fc1ff;
-}
-
-.js-property {
-  color: #9cdcfe;
-}
-
-.js-string {
-  color: #ce9178;
-}
-
-.js-comment {
-  color: #6a9955;
-  font-style: italic;
-}
-
-.js-punct {
-  color: #d4d4d4;
-}
-
-.js-number {
-  color: #b5cea8;
-}
-
-.js-block {
-  margin: 0.5em 0 1.5em 0;
-  line-height: 1.7;
-}
-
-.js-block p {
-  margin: 0;
-  padding: 0;
-}
-
-.js-indent {
-  padding-left: 2em;
-}
-
-.js-indent2 {
-  padding-left: 4em;
-}
-
-.js-comment-block {
-  color: #6a9955;
-  font-style: italic;
-  padding-left: 2em;
-  margin: 0;
-}
-
-.js-section-comment {
-  color: #6a9955;
-  font-style: italic;
-  font-size: 1.4em;
-  margin: 1.5em 0 0.5em 0;
-}
-
-a.js-string {
-  color: #ce9178;
-  text-decoration: underline;
-  text-decoration-color: rgba(206, 145, 120, 0.4);
-}
-
-a.js-string:hover {
-  text-decoration-color: #ce9178;
 }
