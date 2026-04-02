@@ -322,3 +322,83 @@ ul.no-bullets {
 .pixel-style {
   color: #b5cea8;
 }
+
+/*JavaScript Syntax Theme (Projects Page)*/
+.js-keyword {
+  color: #569cd6;
+}
+
+.js-control {
+  color: #c586c0;
+}
+
+.js-func {
+  color: #dcdcaa;
+}
+
+.js-variable {
+  color: #4fc1ff;
+}
+
+.js-property {
+  color: #9cdcfe;
+}
+
+.js-string {
+  color: #ce9178;
+}
+
+.js-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.js-punct {
+  color: #d4d4d4;
+}
+
+.js-number {
+  color: #b5cea8;
+}
+
+.js-block {
+  margin: 0.5em 0 1.5em 0;
+  line-height: 1.7;
+}
+
+.js-block p {
+  margin: 0;
+  padding: 0;
+}
+
+.js-indent {
+  padding-left: 2em;
+}
+
+.js-indent2 {
+  padding-left: 4em;
+}
+
+.js-comment-block {
+  color: #6a9955;
+  font-style: italic;
+  padding-left: 2em;
+  margin: 0;
+}
+
+.js-section-comment {
+  color: #6a9955;
+  font-style: italic;
+  font-size: 1.4em;
+  margin: 1.5em 0 0.5em 0;
+}
+
+a.js-string {
+  color: #ce9178;
+  text-decoration: underline;
+  text-decoration-color: rgba(206, 145, 120, 0.4);
+}
+
+a.js-string:hover {
+  text-decoration-color: #ce9178;
+}
