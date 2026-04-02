@@ -20,162 +20,174 @@
   <section id=”projects”>
     <p class=”js-section-comment”>// Featured Projects</p>
 
-    <div class=”js-block”>
-      <p class=”js-comment-block”>/**</p>
-      <p class=”js-comment-block”> * Arby’s Performance Web App (Current Project)</p>
-      <p class=”js-comment-block”> *</p>
-      <p class=”js-comment-block”> * Developed and deployed a real-world performance-tracking web app</p>
-      <p class=”js-comment-block”> * used by my Arby’s team to set goals, record metrics, and analyze</p>
-      <p class=”js-comment-block”> * weekly KPIs such as Drive-Thru Speed, Sales, Labor, and Food Variance.</p>
-      <p class=”js-comment-block”> */</p>
-      <p><span class=”js-keyword”>const</span> <span class=”js-variable”>arbysPerformanceApp</span> <span class=”js-punct”>= {</span></p>
-      <p class=”js-indent”><span class=”js-property”>stack</span><span class=”js-punct”>: [</span><span class=”js-string”>”Next.js (App Router)”</span><span class=”js-punct”>,</span> <span class=”js-string”>”React”</span><span class=”js-punct”>,</span> <span class=”js-string”>”TypeScript”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Supabase”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Tailwind CSS”</span><span class=”js-punct”>,</span> <span class=”js-string”>”TanStack Query”</span><span class=”js-punct”>],</span></p>
-      <p class=”js-indent”><span class=”js-property”>features</span><span class=”js-punct”>: [</span></p>
-      <p class=”js-indent2”><span class=”js-string”>”Secure role-based access, persistent sessions, and streamlined UX”</span><span class=”js-punct”>,</span></p>
-      <p class=”js-indent2”><span class=”js-string”>”Daily cash control logging with notes”</span><span class=”js-punct”>,</span></p>
-      <p class=”js-indent2”><span class=”js-string”>”Employee Bingo system that tracks points and generates shuffled cards”</span><span class=”js-punct”>,</span></p>
-      <p class=”js-indent2”><span class=”js-string”>”What-If calculators for upselling and car turnover rate opportunities”</span><span class=”js-punct”>,</span></p>
-      <p class=”js-indent2”><span class=”js-string”>”Speed-of-service graphs by daypart (Lunch, Afternoon, Dinner, Late Night)”</span><span class=”js-punct”>,</span></p>
-      <p class=”js-indent”><span class=”js-punct”>],</span></p>
-      <p class=”js-indent”><span class=”js-comment”>// *All images shown from PC view. All sections configured for mobile.*</span></p>
-      <p class=”js-indent”><span class=”js-property”>github</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://github.com/tbone78flag/arbys-performance-app” class=”js-string”>https://github.com/tbone78flag/arbys-performance-app</a>”</span><span class=”js-punct”>,</span></p>
-      <p><span class=”js-punct”>};</span></p>
-    </div>
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
-      <div class="carousel-track">
-        <img src="images/arbys-app-login.JPG" alt="Arby's Performance Web App Login" class="images">
-        <img src="images/arbys-app-dashboard.JPG" alt="Arby's Performance Web App Dashboard" class="images">
-        <img src="images/arbys-app-money.JPG" alt="Arby's Performance Web App Cash Control" class="images">
-        <img src="images/arbys-app-whatif.JPG" alt="Arby's Performance Web App Upsell What-If Calculator" class="images">
-        <img src="images/arbys-app-goals.JPG" alt="Arby's Performaance Web App GM and AM specific Goals and Settings" class="images">
-        <img src="images/arbys-app-speed.JPG" alt="Arby's Performance Web App Speed Charts" class="images">
-        <img src="images/arbys-app-beef.JPG" alt="Arby's Performance Web App Beef Variances" class="images">
-        <img src="images/arbys-app-bingo.JPG" alt="Arby's Performance Web App Bingo" class="images">
+    <div class=”project-row”>
+      <div class=”carousel”>
+        <button class=”carousel-btn prev” onclick=”moveSlide(this, -1)”>&#10094;</button>
+        <div class=”carousel-track”>
+          <img src=”images/arbys-app-login.JPG” alt=”Arby’s Performance Web App Login” class=”images”>
+          <img src=”images/arbys-app-dashboard.JPG” alt=”Arby’s Performance Web App Dashboard” class=”images”>
+          <img src=”images/arbys-app-money.JPG” alt=”Arby’s Performance Web App Cash Control” class=”images”>
+          <img src=”images/arbys-app-whatif.JPG” alt=”Arby’s Performance Web App Upsell What-If Calculator” class=”images”>
+          <img src=”images/arbys-app-goals.JPG” alt=”Arby’s Performaance Web App GM and AM specific Goals and Settings” class=”images”>
+          <img src=”images/arbys-app-speed.JPG” alt=”Arby’s Performance Web App Speed Charts” class=”images”>
+          <img src=”images/arbys-app-beef.JPG” alt=”Arby’s Performance Web App Beef Variances” class=”images”>
+          <img src=”images/arbys-app-bingo.JPG” alt=”Arby’s Performance Web App Bingo” class=”images”>
+        </div>
+        <button class=”carousel-btn next” onclick=”moveSlide(this, 1)”>&#10095;</button>
+        <div class=”carousel-dots”></div>
       </div>
-      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
-      <div class="carousel-dots"></div>
-    </div>
-    <div class="js-block">
-      <p class="js-comment-block">/**</p>
-      <p class="js-comment-block"> * Bookish — Personal Reading Tracker</p>
-      <p class="js-comment-block"> *</p>
-      <p class="js-comment-block"> * Built a reading tracker designed with personality and atmosphere —</p>
-      <p class="js-comment-block"> * not just a spreadsheet with a login screen, but a tool that matches</p>
-      <p class="js-comment-block"> * how people actually read.</p>
-      <p class="js-comment-block"> */</p>
-      <p><span class="js-keyword">const</span> <span class="js-variable">bookish</span> <span class="js-punct">= {</span></p>
-      <p class="js-indent"><span class="js-property">stack</span><span class="js-punct">: [</span><span class="js-string">"Next.js 15 (App Router)"</span><span class="js-punct">,</span> <span class="js-string">"React 19"</span><span class="js-punct">,</span> <span class="js-string">"TypeScript"</span><span class="js-punct">,</span> <span class="js-string">"Supabase (Auth &amp; Postgres + RLS)"</span><span class="js-punct">,</span> <span class="js-string">"Tailwind CSS v4"</span><span class="js-punct">,</span> <span class="js-string">"Vercel"</span><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">features</span><span class="js-punct">: [</span></p>
-      <p class="js-indent2"><span class="js-string">"Track reading progress with page history, start/finish dates, and status timelines"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Spoiler-safe notes tied to your current page — hidden until you read past them"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Organize books into series and monitor progress across multi-book arcs"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Search and add books via Google Books integration with bulk scan mode"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"12 genre-inspired visual themes plus solid color modes"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Virtual bookshelves with customizable spine colors and flexible library views"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Mark books as Did Not Finish with optional context"</span><span class="js-punct">,</span></p>
-      <p class="js-indent"><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-comment">// *All images shown from PC view. All sections configured for mobile.*</span></p>
-      <p class="js-indent"><span class="js-property">github</span><span class="js-punct">:</span> <span class="js-string">"<a href="https://github.com/tbone78flag/bookish" class="js-string">https://github.com/tbone78flag/bookish</a>"</span><span class="js-punct">,</span></p>
-      <p><span class="js-punct">};</span></p>
-    </div>
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
-      <div class="carousel-track">
-        <img src="images/bookish-start.png" alt="Bookish Landing Page" class="images">
-        <img src="images/bookish-sign-in.png" alt="Bookish Sign In" class="images">
-        <img src="images/bookish-dashboard.png" alt="Bookish Dashboard" class="images">
-        <img src="images/bookish-library.png" alt="Bookish Library View" class="images">
-        <img src="images/bookish-book-search.png" alt="Bookish Book Search" class="images">
-        <img src="images/bookish-book-page.png" alt="Bookish Book Page" class="images">
-        <img src="images/bookish-update-progress.png" alt="Bookish Update Reading Progress" class="images">
-        <img src="images/bookish-themes.png" alt="Bookish Genre-Inspired Themes" class="images">
+      <div class=”js-block”>
+        <p class=”js-comment-block”>/**</p>
+        <p class=”js-comment-name”> * Arby’s Performance Web App (Current Project)</p>
+        <p class=”js-comment-block”> *</p>
+        <p class=”js-comment-block”> * Developed and deployed a real-world performance-tracking web app</p>
+        <p class=”js-comment-block”> * used by my Arby’s team to set goals, record metrics, and analyze</p>
+        <p class=”js-comment-block”> * weekly KPIs such as Drive-Thru Speed, Sales, Labor, and Food Variance.</p>
+        <p class=”js-comment-block”> */</p>
+        <p><span class=”js-keyword”>const</span> <span class=”js-variable”>arbysPerformanceApp</span> <span class=”js-punct”>= {</span></p>
+        <p class=”js-indent”><span class=”js-property”>stack</span><span class=”js-punct”>: [</span><span class=”js-string”>”Next.js (App Router)”</span><span class=”js-punct”>,</span> <span class=”js-string”>”React”</span><span class=”js-punct”>,</span> <span class=”js-string”>”TypeScript”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Supabase”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Tailwind CSS”</span><span class=”js-punct”>,</span> <span class=”js-string”>”TanStack Query”</span><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-property”>features</span><span class=”js-punct”>: [</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Secure role-based access, persistent sessions, and streamlined UX”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Daily cash control logging with notes”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Employee Bingo system that tracks points and generates shuffled cards”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”What-If calculators for upselling and car turnover rate opportunities”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Speed-of-service graphs by daypart (Lunch, Afternoon, Dinner, Late Night)”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent”><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-comment”>// *All images shown from PC view. All sections configured for mobile.*</span></p>
+        <p class=”js-indent”><span class=”js-property”>github</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://github.com/tbone78flag/arbys-performance-app” class=”js-string”>https://github.com/tbone78flag/arbys-performance-app</a>”</span><span class=”js-punct”>,</span></p>
+        <p><span class=”js-punct”>};</span></p>
       </div>
-      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
-      <div class="carousel-dots"></div>
-    </div>
-    <div class="js-block">
-      <p class="js-comment-block">/**</p>
-      <p class="js-comment-block"> * Financial Manager</p>
-      <p class="js-comment-block"> *</p>
-      <p class="js-comment-block"> * Built a personal finance manager desktop app in Java that helps</p>
-      <p class="js-comment-block"> * users track spending, deposits, and plan for retirement.</p>
-      <p class="js-comment-block"> */</p>
-      <p><span class="js-keyword">const</span> <span class="js-variable">financialManager</span> <span class="js-punct">= {</span></p>
-      <p class="js-indent"><span class="js-property">stack</span><span class="js-punct">: [</span><span class="js-string">"Java"</span><span class="js-punct">,</span> <span class="js-string">"Swing"</span><span class="js-punct">,</span> <span class="js-string">"File I/O"</span><span class="js-punct">,</span> <span class="js-string">"OOP"</span><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">features</span><span class="js-punct">: [</span></p>
-      <p class="js-indent2"><span class="js-string">"Secure login system with user-specific data storage"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Full GUI interface to manage bills, income, and retirement goals"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Retirement estimator based on age and monthly contributions"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Java file handling to save and load data per user account"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Object-oriented design for scalability and maintainability"</span><span class="js-punct">,</span></p>
-      <p class="js-indent"><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">demo</span><span class="js-punct">:</span> <span class="js-string">"<a href="https://www.youtube.com/watch?v=Xmgl4RImoTo" target="_blank" class="js-string">Watch Demo Video on YouTube</a>"</span><span class="js-punct">,</span></p>
-      <p class="js-indent"><span class="js-property">github</span><span class="js-punct">:</span> <span class="js-string">"<a href="https://github.com/tbone78flag/financial-planner/tree/main" class="js-string">https://github.com/tbone78flag/financial-planner</a>"</span><span class="js-punct">,</span></p>
-      <p><span class="js-punct">};</span></p>
-    </div>
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
-      <div class="carousel-track">
-        <img src="images/fmlogin.JPG" alt="Financial Manager Login Page" class="images">
-        <img src="images/fmhomepage.JPG" alt="Financial Manager Homepage" class="images">
-        <img src="images/fmlogreceivables.JPG" alt="Financial Manager Typing in Receivables" class="images">
-        <img src="images/fmexpenses.JPG" alt="Financial Manager Expenses Page" class="images">
-        <img src="images/fmsavings.JPG" alt="Financial Manager Savings Page" class="images">
-        <img src="images/fm401k.JPG" alt="Financial Manager 401 Entry Page" class="images">
-      </div>
-      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
-      <div class="carousel-dots"></div>
-    </div>
-    <div class="js-block">
-      <p class="js-comment-block">/**</p>
-      <p class="js-comment-block"> * Arby’s Store Manager</p>
-      <p class="js-comment-block"> *</p>
-      <p class="js-comment-block"> * Developing a desktop simulation of restaurant operations</p>
-      <p class="js-comment-block"> * inspired by real-world Arby’s management tasks.</p>
-      <p class="js-comment-block"> */</p>
-      <p><span class="js-keyword">const</span> <span class="js-variable">arbysStoreManager</span> <span class="js-punct">= {</span></p>
-      <p class="js-indent"><span class="js-property">stack</span><span class="js-punct">: [</span><span class="js-string">"Java"</span><span class="js-punct">,</span> <span class="js-string">"JavaFX"</span><span class="js-punct">,</span> <span class="js-string">"File I/O"</span><span class="js-punct">,</span> <span class="js-string">"UI/UX Design"</span><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">features</span><span class="js-punct">: [</span></p>
-      <p class="js-indent2"><span class="js-string">"Role-based login support (Manager, Team Lead, Trainer) with personalized preferences"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Multiple views (Login, Dashboard, Sales Entry, Settings) with dark mode and fullscreen"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Local user preferences and last-used login state via Java file I/O"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Printable reports, simulated sales tracking, and export options (in development)"</span><span class="js-punct">,</span></p>
-      <p class="js-indent"><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">github</span><span class="js-punct">:</span> <span class="js-string">"<a href="https://github.com/tbone78flag/arbys-store-manager" class="js-string">https://github.com/tbone78flag/arbys-store-manager</a>"</span><span class="js-punct">,</span></p>
-      <p><span class="js-punct">};</span></p>
     </div>
 
-    <div class="js-block">
-      <p class="js-comment-block">/**</p>
-      <p class="js-comment-block"> * User Behavior Analytics Dashboard</p>
-      <p class="js-comment-block"> *</p>
-      <p class="js-comment-block"> * Built and deployed an interactive dashboard that analyzes simulated</p>
-      <p class="js-comment-block"> * user data for retention and A/B testing insights.</p>
-      <p class="js-comment-block"> */</p>
-      <p><span class="js-keyword">const</span> <span class="js-variable">analyticsDashboard</span> <span class="js-punct">= {</span></p>
-      <p class="js-indent"><span class="js-property">stack</span><span class="js-punct">: [</span><span class="js-string">"Python"</span><span class="js-punct">,</span> <span class="js-string">"Streamlit"</span><span class="js-punct">,</span> <span class="js-string">"Plotly"</span><span class="js-punct">,</span> <span class="js-string">"pandas"</span><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">features</span><span class="js-punct">: [</span></p>
-      <p class="js-indent2"><span class="js-string">"Full data workflow: simulation → analysis → visualization → deployment"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Custom filters for A/B group, signup date, session count, and retention"</span><span class="js-punct">,</span></p>
-      <p class="js-indent2"><span class="js-string">"Automatic insight summaries based on performance comparisons"</span><span class="js-punct">,</span></p>
-      <p class="js-indent"><span class="js-punct">],</span></p>
-      <p class="js-indent"><span class="js-property">live</span><span class="js-punct">:</span> <span class="js-string">"<a href="https://user-behavior-analytics-dashboard-middtgh8appavoyjxpr3toe.streamlit.app/" class="js-string">Deployed Live on Streamlit Cloud</a>"</span><span class="js-punct">,</span></p>
-      <p class="js-indent"><span class="js-property">github</span><span class="js-punct">:</span> <span class="js-string">"<a href="https://github.com/tbone78flag/user-behavior-analytics-dashboard" class="js-string">https://github.com/tbone78flag/user-behavior-analytics-dashboard</a>"</span><span class="js-punct">,</span></p>
-      <p><span class="js-punct">};</span></p>
-    </div>
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
-      <div class="carousel-track">
-        <img src="images/UBAD.JPG" alt="Retention Rate for User Behavior Analytics Dashboard" class="images">
-        <img src="images/RetentionRate.JPG" alt="Retention Rate for User Behavior Analytics Dashboard" class="images">
-        <img src="images/RawData.JPG" alt="Raw Data Input for User Behavior Analytics Dashboard" class="images">
+    <div class=”project-row”>
+      <div class=”carousel”>
+        <button class=”carousel-btn prev” onclick=”moveSlide(this, -1)”>&#10094;</button>
+        <div class=”carousel-track”>
+          <img src=”images/bookish-start.png” alt=”Bookish Landing Page” class=”images”>
+          <img src=”images/bookish-sign-in.png” alt=”Bookish Sign In” class=”images”>
+          <img src=”images/bookish-dashboard.png” alt=”Bookish Dashboard” class=”images”>
+          <img src=”images/bookish-library.png” alt=”Bookish Library View” class=”images”>
+          <img src=”images/bookish-book-search.png” alt=”Bookish Book Search” class=”images”>
+          <img src=”images/bookish-book-page.png” alt=”Bookish Book Page” class=”images”>
+          <img src=”images/bookish-update-progress.png” alt=”Bookish Update Reading Progress” class=”images”>
+          <img src=”images/bookish-themes.png” alt=”Bookish Genre-Inspired Themes” class=”images”>
+        </div>
+        <button class=”carousel-btn next” onclick=”moveSlide(this, 1)”>&#10095;</button>
+        <div class=”carousel-dots”></div>
       </div>
-      <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
-      <div class="carousel-dots"></div>
+      <div class=”js-block”>
+        <p class=”js-comment-block”>/**</p>
+        <p class=”js-comment-name”> * Bookish — Personal Reading Tracker</p>
+        <p class=”js-comment-block”> *</p>
+        <p class=”js-comment-block”> * Built a reading tracker designed with personality and atmosphere —</p>
+        <p class=”js-comment-block”> * not just a spreadsheet with a login screen, but a tool that matches</p>
+        <p class=”js-comment-block”> * how people actually read.</p>
+        <p class=”js-comment-block”> */</p>
+        <p><span class=”js-keyword”>const</span> <span class=”js-variable”>bookish</span> <span class=”js-punct”>= {</span></p>
+        <p class=”js-indent”><span class=”js-property”>stack</span><span class=”js-punct”>: [</span><span class=”js-string”>”Next.js 15 (App Router)”</span><span class=”js-punct”>,</span> <span class=”js-string”>”React 19”</span><span class=”js-punct”>,</span> <span class=”js-string”>”TypeScript”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Supabase (Auth &amp; Postgres + RLS)”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Tailwind CSS v4”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Vercel”</span><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-property”>features</span><span class=”js-punct”>: [</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Track reading progress with page history, start/finish dates, and status timelines”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Spoiler-safe notes tied to your current page — hidden until you read past them”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Organize books into series and monitor progress across multi-book arcs”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Search and add books via Google Books integration with bulk scan mode”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”12 genre-inspired visual themes plus solid color modes”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Virtual bookshelves with customizable spine colors and flexible library views”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Mark books as Did Not Finish with optional context”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent”><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-comment”>// *All images shown from PC view. All sections configured for mobile.*</span></p>
+        <p class=”js-indent”><span class=”js-property”>github</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://github.com/tbone78flag/bookish” class=”js-string”>https://github.com/tbone78flag/bookish</a>”</span><span class=”js-punct”>,</span></p>
+        <p><span class=”js-punct”>};</span></p>
+      </div>
     </div>
-    <p class="js-section-comment">// return projects;</p>
-    <p><span class="js-punct">}</span></p>
+
+    <div class=”project-row”>
+      <div class=”carousel”>
+        <button class=”carousel-btn prev” onclick=”moveSlide(this, -1)”>&#10094;</button>
+        <div class=”carousel-track”>
+          <img src=”images/fmlogin.JPG” alt=”Financial Manager Login Page” class=”images”>
+          <img src=”images/fmhomepage.JPG” alt=”Financial Manager Homepage” class=”images”>
+          <img src=”images/fmlogreceivables.JPG” alt=”Financial Manager Typing in Receivables” class=”images”>
+          <img src=”images/fmexpenses.JPG” alt=”Financial Manager Expenses Page” class=”images”>
+          <img src=”images/fmsavings.JPG” alt=”Financial Manager Savings Page” class=”images”>
+          <img src=”images/fm401k.JPG” alt=”Financial Manager 401 Entry Page” class=”images”>
+        </div>
+        <button class=”carousel-btn next” onclick=”moveSlide(this, 1)”>&#10095;</button>
+        <div class=”carousel-dots”></div>
+      </div>
+      <div class=”js-block”>
+        <p class=”js-comment-block”>/**</p>
+        <p class=”js-comment-name”> * Financial Manager</p>
+        <p class=”js-comment-block”> *</p>
+        <p class=”js-comment-block”> * Built a personal finance manager desktop app in Java that helps</p>
+        <p class=”js-comment-block”> * users track spending, deposits, and plan for retirement.</p>
+        <p class=”js-comment-block”> */</p>
+        <p><span class=”js-keyword”>const</span> <span class=”js-variable”>financialManager</span> <span class=”js-punct”>= {</span></p>
+        <p class=”js-indent”><span class=”js-property”>stack</span><span class=”js-punct”>: [</span><span class=”js-string”>”Java”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Swing”</span><span class=”js-punct”>,</span> <span class=”js-string”>”File I/O”</span><span class=”js-punct”>,</span> <span class=”js-string”>”OOP”</span><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-property”>features</span><span class=”js-punct”>: [</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Secure login system with user-specific data storage”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Full GUI interface to manage bills, income, and retirement goals”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Retirement estimator based on age and monthly contributions”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Java file handling to save and load data per user account”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Object-oriented design for scalability and maintainability”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent”><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-property”>demo</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://www.youtube.com/watch?v=Xmgl4RImoTo” target=”_blank” class=”js-string”>Watch Demo Video on YouTube</a>”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent”><span class=”js-property”>github</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://github.com/tbone78flag/financial-planner/tree/main” class=”js-string”>https://github.com/tbone78flag/financial-planner</a>”</span><span class=”js-punct”>,</span></p>
+        <p><span class=”js-punct”>};</span></p>
+      </div>
+    </div>
+
+    <div class=”js-block”>
+      <p class=”js-comment-block”>/**</p>
+      <p class=”js-comment-name”> * Arby’s Store Manager</p>
+      <p class=”js-comment-block”> *</p>
+      <p class=”js-comment-block”> * Developing a desktop simulation of restaurant operations</p>
+      <p class=”js-comment-block”> * inspired by real-world Arby’s management tasks.</p>
+      <p class=”js-comment-block”> */</p>
+      <p><span class=”js-keyword”>const</span> <span class=”js-variable”>arbysStoreManager</span> <span class=”js-punct”>= {</span></p>
+      <p class=”js-indent”><span class=”js-property”>stack</span><span class=”js-punct”>: [</span><span class=”js-string”>”Java”</span><span class=”js-punct”>,</span> <span class=”js-string”>”JavaFX”</span><span class=”js-punct”>,</span> <span class=”js-string”>”File I/O”</span><span class=”js-punct”>,</span> <span class=”js-string”>”UI/UX Design”</span><span class=”js-punct”>],</span></p>
+      <p class=”js-indent”><span class=”js-property”>features</span><span class=”js-punct”>: [</span></p>
+      <p class=”js-indent2”><span class=”js-string”>”Role-based login support (Manager, Team Lead, Trainer) with personalized preferences”</span><span class=”js-punct”>,</span></p>
+      <p class=”js-indent2”><span class=”js-string”>”Multiple views (Login, Dashboard, Sales Entry, Settings) with dark mode and fullscreen”</span><span class=”js-punct”>,</span></p>
+      <p class=”js-indent2”><span class=”js-string”>”Local user preferences and last-used login state via Java file I/O”</span><span class=”js-punct”>,</span></p>
+      <p class=”js-indent2”><span class=”js-string”>”Printable reports, simulated sales tracking, and export options (in development)”</span><span class=”js-punct”>,</span></p>
+      <p class=”js-indent”><span class=”js-punct”>],</span></p>
+      <p class=”js-indent”><span class=”js-property”>github</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://github.com/tbone78flag/arbys-store-manager” class=”js-string”>https://github.com/tbone78flag/arbys-store-manager</a>”</span><span class=”js-punct”>,</span></p>
+      <p><span class=”js-punct”>};</span></p>
+    </div>
+
+    <div class=”project-row”>
+      <div class=”carousel”>
+        <button class=”carousel-btn prev” onclick=”moveSlide(this, -1)”>&#10094;</button>
+        <div class=”carousel-track”>
+          <img src=”images/UBAD.JPG” alt=”Retention Rate for User Behavior Analytics Dashboard” class=”images”>
+          <img src=”images/RetentionRate.JPG” alt=”Retention Rate for User Behavior Analytics Dashboard” class=”images”>
+          <img src=”images/RawData.JPG” alt=”Raw Data Input for User Behavior Analytics Dashboard” class=”images”>
+        </div>
+        <button class=”carousel-btn next” onclick=”moveSlide(this, 1)”>&#10095;</button>
+        <div class=”carousel-dots”></div>
+      </div>
+      <div class=”js-block”>
+        <p class=”js-comment-block”>/**</p>
+        <p class=”js-comment-name”> * User Behavior Analytics Dashboard</p>
+        <p class=”js-comment-block”> *</p>
+        <p class=”js-comment-block”> * Built and deployed an interactive dashboard that analyzes simulated</p>
+        <p class=”js-comment-block”> * user data for retention and A/B testing insights.</p>
+        <p class=”js-comment-block”> */</p>
+        <p><span class=”js-keyword”>const</span> <span class=”js-variable”>analyticsDashboard</span> <span class=”js-punct”>= {</span></p>
+        <p class=”js-indent”><span class=”js-property”>stack</span><span class=”js-punct”>: [</span><span class=”js-string”>”Python”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Streamlit”</span><span class=”js-punct”>,</span> <span class=”js-string”>”Plotly”</span><span class=”js-punct”>,</span> <span class=”js-string”>”pandas”</span><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-property”>features</span><span class=”js-punct”>: [</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Full data workflow: simulation → analysis → visualization → deployment”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Custom filters for A/B group, signup date, session count, and retention”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent2”><span class=”js-string”>”Automatic insight summaries based on performance comparisons”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent”><span class=”js-punct”>],</span></p>
+        <p class=”js-indent”><span class=”js-property”>live</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://user-behavior-analytics-dashboard-middtgh8appavoyjxpr3toe.streamlit.app/” class=”js-string”>Deployed Live on Streamlit Cloud</a>”</span><span class=”js-punct”>,</span></p>
+        <p class=”js-indent”><span class=”js-property”>github</span><span class=”js-punct”>:</span> <span class=”js-string”>”<a href=”https://github.com/tbone78flag/user-behavior-analytics-dashboard” class=”js-string”>https://github.com/tbone78flag/user-behavior-analytics-dashboard</a>”</span><span class=”js-punct”>,</span></p>
+        <p><span class=”js-punct”>};</span></p>
+      </div>
+    </div>
+
+    <p class=”js-section-comment”>// return projects;</p>
+    <p><span class=”js-punct”>}</span></p>
   </section>
 
   <script>

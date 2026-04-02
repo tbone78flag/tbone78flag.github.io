@@ -364,6 +364,8 @@ ul.no-bullets {
 .js-block {
   margin: 0.5em 0 1.5em 0;
   line-height: 1.7;
+  flex: 1;
+  min-width: 0;
 }
 
 .js-block p {
@@ -386,6 +388,15 @@ ul.no-bullets {
   margin: 0;
 }
 
+.js-comment-name {
+  color: #6a9955;
+  font-style: italic;
+  padding-left: 2em;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 .js-section-comment {
   color: #6a9955;
   font-style: italic;
@@ -401,4 +412,35 @@ a.js-string {
 
 a.js-string:hover {
   text-decoration-color: #ce9178;
+}
+
+/*Project Row — code left, carousel right*/
+.project-row {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.project-row .carousel {
+  flex: 0 0 45%;
+  max-width: 500px;
+  margin: 0;
+}
+
+.project-row .js-block {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-row .carousel {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+  }
 }
